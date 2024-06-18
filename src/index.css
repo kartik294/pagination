@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.app { 
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    align-items: center;
+    padding: 5px;
+}
+
+.table {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center ;
+    border: 2px solid rgb(231, 231, 231);
+    border-top: none;
+    width: 100%;
+}
+
+.head-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: rgb(8, 171, 119);
+}
+
+.tbody {
+    width: 100%;
+}
+
+.data-row {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid #e8e7e7;
+    width: 100%;
+    padding: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.prevPage {
+    color: white;
+    background: rgb(8, 171, 119);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    font-weight: 600;
+}
+
+.pageNo {
+    color: white;
+    background: rgb(8, 171, 119);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    width: 45px;
+    height: 30px;
+    font-weight: 600;
+}
+
+.nextPage {
+    color: white;
+    background: rgb(8, 171, 119);
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    font-weight: 600;
+}
+.prevPage:hover, .pageNo:hover, .nextPage:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(8, 171, 119);
+    cursor: pointer;
+    outline-style: solid;
+    outline-color:rgb(8, 171, 119);    
+}
